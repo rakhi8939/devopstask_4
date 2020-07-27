@@ -15,9 +15,9 @@ RUN yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 RUN mkdir /root/jenkins
 RUN yum repolist
 RUN mkdir /root/.kube
-COPY ca.crt /root/
-COPY client.key /root/
-COPY client.crt /root/
+COPY ca.crt /root/Desktop/
+COPY client.key /root/Desktop/
+COPY client.crt /root/Desktop/
 COPY config /root/.kube/config
 
 RUN mkdir -p /var/run/sshd
